@@ -110,7 +110,7 @@ describe('HistoricDeviationValidator', () => {
     describe('when the deviation is less than or equal to the threshold', () => {
       const currentValue = 1100009
 
-      it('does raises a flag for the calling address', async () => {
+      it('does not raise a flag for the calling address', async () => {
         const tx = await validator
           .connect(personas.Nelly)
           .validate(
